@@ -1,0 +1,54 @@
+.row {
+    columns: 4 300px;
+    column-gap: 16px;
+    padding: 16px;
+
+}
+
+.column {
+    break-inside: avoid;
+    margin-bottom: 16px;
+}
+
+.image-container {
+    position: relative;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: grayscale(1) brightness(0.7);
+    transition: all 0.3s ease;
+}
+
+.image-container:hover img {
+    filter: grayscale(0) brightness(1);
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 1200px) {
+    .row {
+        columns: 3 250px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .row {
+        columns: 2 200px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .row {
+        columns: 1;
+    }
+
+    .column {
+        margin-bottom: 12px;
+    }
+}
