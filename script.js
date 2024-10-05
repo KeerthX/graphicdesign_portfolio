@@ -14,10 +14,14 @@ Vue.component('image-grid', {
 new Vue({
     el: '#app',
     data: {
-        images: []
+        images: [],
+        texts: ['Graphic Designer', 'UI/UX Designer', 'Visual Artist'],
+        currentTextIndex: 0,
+        currentText: ''
     },
     mounted() {
         this.fetchImages();
+        this.startTextAnimation();
     },
     methods: {
         fetchImages() {
@@ -29,6 +33,15 @@ new Vue({
                 .catch(error => {
                     console.error('Error fetching images:', error);
                 });
+        },
+        startTextAnimation() {
+            this.currentText = this.texts[0];
+            let index = 0;
+
+            setInterval(() => {
+                index = (index + 1) % this.texts.length;
+                this.currentText = this.texts[index];
+            }, 3000);
         }
     }
 });

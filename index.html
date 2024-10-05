@@ -7,11 +7,55 @@
     <title>Design Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div id="app">
-        <image-grid :images="images"></image-grid>
+        <header class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>
+                        <span class="greeting">Hi, I'm</span>
+                        <span class="name">John Doe</span>
+                    </h1>
+                    <div class="dynamic-text">I'm a
+                        <span class="changing-text" v-text="currentText"></span>
+                    </div>
+                    <p class="bio">Crafting visual experiences that blend creativity with purpose.
+                        With a passion for design and an eye for detail, I transform ideas into
+                        compelling visual narratives.</p>
+                    <button class="cta-button">View My Work</button>
+                </div>
+                <div class="hero-image">
+                    <img src="path/to/designer-photo.jpg" alt="Designer photo">
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <image-grid :images="images"></image-grid>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Get in Touch</h3>
+                    <a href="mailto:hello@example.com">hello@example.com</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Me</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Behance</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <p class="copyright">© 2024 John Doe. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
     </div>
     <script src="script.js"></script>
 </body>
