@@ -4,15 +4,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Design Portfolio</title>
+
+    <!-- Primary Meta Tags -->
+    <title>John Doe - Professional UI/UX Designer Portfolio | Creative Visual Solutions</title>
+    <meta name="title" content="John Doe - Professional UI/UX Designer Portfolio | Creative Visual Solutions">
+    <meta name="description"
+        content="Explore the portfolio of John Doe, an experienced UI/UX designer specializing in creating compelling visual narratives and user-centered design solutions. View projects and get in touch for collaborations.">
+    <meta name="keywords"
+        content="UI/UX designer, web design, visual design, user interface, user experience, John Doe, design portfolio">
+    <meta name="author" content="John Doe">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.johndoedesign.com/">
+    <meta property="og:title" content="John Doe - Professional UI/UX Designer Portfolio">
+    <meta property="og:description"
+        content="Experienced UI/UX designer creating compelling visual narratives and user-centered design solutions. View my latest projects.">
+    <meta property="og:image" content="https://www.johndoedesign.com/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.johndoedesign.com/">
+    <meta property="twitter:title" content="John Doe - Professional UI/UX Designer Portfolio">
+    <meta property="twitter:description"
+        content="Experienced UI/UX designer creating compelling visual narratives and user-centered design solutions. View my latest projects.">
+    <meta property="twitter:image" content="https://www.johndoedesign.com/twitter-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.johndoedesign.com/">
+
+    <!-- Preconnect to external resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Vue.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js" defer></script>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "John Doe",
+      "url": "https://www.johndoedesign.com",
+      "jobTitle": "UI/UX Designer",
+      "image": "https://www.johndoedesign.com/john-doe.jpg",
+      "sameAs": [
+        "https://www.linkedin.com/in/johndoe",
+        "https://www.behance.net/johndoe",
+        "https://www.instagram.com/johndoedesign"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "hello@example.com",
+        "contactType": "professional"
+      }
+    }
+    </script>
 </head>
 
 <body>
     <div id="app">
         <header class="hero">
+            <nav aria-label="Main navigation">
+                <!-- Add semantic navigation here if needed -->
+            </nav>
             <div class="hero-content">
                 <div class="hero-text">
                     <h1>
@@ -25,15 +93,16 @@
                     <p class="bio">Crafting visual experiences that blend creativity with purpose.
                         With a passion for design and an eye for detail, I transform ideas into
                         compelling visual narratives.</p>
-                    <button class="cta-button">Resume</button>
+                    <button class="cta-button" aria-label="Download Resume">Resume</button>
                 </div>
                 <div class="hero-image">
-                    <img src="yourphoto.png" alt="Designer photo">
+                    <img src="yourphoto.png" alt="John Doe, UI/UX Designer" width="400" height="400" loading="eager">
                 </div>
             </div>
         </header>
 
         <main>
+            <h2 class="visually-hidden">Portfolio Projects</h2>
             <image-grid :images="images"></image-grid>
         </main>
 
@@ -46,18 +115,18 @@
                 <div class="footer-section">
                     <h3>Follow Me</h3>
                     <div class="social-links">
-                        <a href="#" class="social-link">Instagram</a>
-                        <a href="#" class="social-link">Behance</a>
-                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link" aria-label="Follow on Instagram">Instagram</a>
+                        <a href="#" class="social-link" aria-label="Follow on Behance">Behance</a>
+                        <a href="#" class="social-link" aria-label="Connect on LinkedIn">LinkedIn</a>
                     </div>
                 </div>
                 <div class="footer-section">
-                    <p class="copyright">© 2024 John Doe. All rights reserved.</p>
+                    <p class="copyright">© <span id="currentYear">2024</span> John Doe. All rights reserved.</p>
                 </div>
             </div>
         </footer>
     </div>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 
 </html>
