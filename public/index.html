@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <meta name="description" content="Professional Designer Portfolio">
+    <meta name="author" content="John Doe">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/dynamic-styles.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Vue.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js" defer></script>
+</head>
+
+<body>
+    <div id="app">
+        <header class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>
+                        <span class="greeting">Hi, I'm</span>
+                        <span class="name" id="authorName"></span>
+                    </h1>
+                    <div class="dynamic-text">I'm a
+                        <span class="changing-text" v-text="currentText"></span>
+                    </div>
+                    <p class="bio" id="heroBio"></p>
+                    <button class="cta-button" aria-label="Download Resume">Resume</button>
+                </div>
+                <div class="hero-image">
+                    <img id="authorImage" alt="Author" width="400" height="400" loading="eager">
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <h2 class="visually-hidden">Portfolio Projects</h2>
+            <image-grid :images="images"></image-grid>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Get in Touch</h3>
+                    <a id="authorEmail" href=""></a>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Me</h3>
+                    <div class="social-links">
+                        <a id="instagramLink" class="social-link" aria-label="Follow on Instagram">Instagram</a>
+                        <a id="behanceLink" class="social-link" aria-label="Follow on Behance">Behance</a>
+                        <a id="linkedinLink" class="social-link" aria-label="Connect on LinkedIn">LinkedIn</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <p class="copyright">© <span id="currentYear"></span> <span id="copyrightName"></span>. All rights
+                        reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+
+</html>
