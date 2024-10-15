@@ -1,7 +1,9 @@
 {
   "dependencies": {
-    "express": "^4.21.1"
-  },
+    "express": "^4.21.1",
+    "fs": "0.0.1-security",
+    "path": "^0.12.7"
+  }
   "scripts": {
     "start": "node server.js"
   }
