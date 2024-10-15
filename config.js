@@ -1,5 +1,5 @@
 module.exports = {
-    siteTitle: "John Doe - Professional UI/UX Designer Portfolio",
+    siteTitle: "Prakeerth",
     siteDescription: "Explore the portfolio of John Doe, an experienced UI/UX designer specializing in creating compelling visual narratives and user-centered design solutions.",
     siteUrl: "https://www.johndoedesign.com",
     authorName: "John Doe",
