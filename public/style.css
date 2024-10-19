@@ -85,6 +85,13 @@ h1 {
     transition: transform var(--transition-standard);
 }
 
+a,
+a:hover,
+a:visited {
+    color: var(--color-text);
+    text-decoration: none;
+}
+
 .cta-button:hover {
     transform: translateY(-2px);
 }
