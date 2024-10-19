@@ -1,11 +1,11 @@
 module.exports = {
-    siteTitle: "Prakeerth",
+    siteTitle: "John Doe's Portfolio",
     siteDescription: "Explore the portfolio of John Doe, an experienced UI/UX designer specializing in creating compelling visual narratives and user-centered design solutions.",
     siteUrl: "https://www.johndoedesign.com",
     authorName: "John Doe",
     authorEmail: "hello@example.com",
     authorJobTitle: "UI/UX Designer",
-    authorImage: "john-doe.jpg",
+    authorImage: "/images/john-doe.jpg",
     socialLinks: {
         linkedin: "https://www.linkedin.com/in/johndoe",
         behance: "https://www.behance.net/johndoe",
@@ -16,7 +16,11 @@ module.exports = {
         "UI/UX Designer",
         "Visual Artist"
     ],
-    heroBio: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    heroBio: "I'm a passionate designer with over 5 years of experience in creating user-centered digital experiences. My goal is to blend creativity with functionality to deliver impactful designs.",
+    ctaButton: {
+        text: "View Resume",
+        link: "https://graphicdesign-portfolio-builder.vercel.app"
+    },
     colorScheme: {
         background: "#121212",
         surface: "#1E1E1E",
