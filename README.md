@@ -1,5 +1,3 @@
-Here's a proper README.md file for the GitHub repository based on the information you provided:
-
 # Graphic Design Portfolio Template
 
 A free, customizable graphic design portfolio template to showcase your creative work.
