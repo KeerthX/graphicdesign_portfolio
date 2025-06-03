@@ -5,7 +5,7 @@ module.exports = {
     authorName: "John Doe",
     authorEmail: "hello@example.com",
     authorJobTitle: "UI/UX Designer",
-    authorImage: "/images/john-doe.jpg",
+    authorImage: "https://placehold.co/1080x1080",
     socialLinks: {
         linkedin: "https://www.linkedin.com/in/johndoe",
         behance: "https://www.behance.net/johndoe",
@@ -18,8 +18,8 @@ module.exports = {
     ],
     heroBio: "I'm a passionate designer with over 5 years of experience in creating user-centered digital experiences. My goal is to blend creativity with functionality to deliver impactful designs.",
     ctaButton: {
-        text: "View Resume",
-        link: "https://graphicdesign-portfolio-builder.vercel.app"
+        text: "Generate Your Config File",
+        link: "https://graphicdesignconfigbuilder.vercel.app/"
     },
     colorScheme: {
         background: "#121212",
